@@ -1,3 +1,5 @@
+package methodoverloading;
+
 public class Product {
     private double price;
     void setPrice(double price)

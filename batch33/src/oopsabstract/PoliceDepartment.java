@@ -1,3 +1,5 @@
+package oopsabstract;
+
 public class PoliceDepartment extends Department {
     private  int departmentSize;
     public PoliceDepartment(int departmentSize)

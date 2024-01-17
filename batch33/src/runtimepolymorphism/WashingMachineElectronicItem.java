@@ -1,4 +1,6 @@
-public class WashingMachineElectronicItem extends Electronics{
+package runtimepolymorphism;
+
+public class WashingMachineElectronicItem extends Electronics {
 
     @Override
     void worksBasedOnSoftware() {
