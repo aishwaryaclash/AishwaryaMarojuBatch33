@@ -17,6 +17,11 @@ public class RotatingArray {
             for (int i = d; i < n; i++) {
                 temp[k] = arr[i];
                 k++;
+
+            }
+            for(int p=0;p<temp.length;p++)
+            {
+                System.out.println(temp[p]);
             }
 
             // Storing the first d elements of array arr[]
@@ -25,7 +30,10 @@ public class RotatingArray {
                 temp[k] = arr[i];
                 k++;
             }
-
+            for(int q=0;q<temp.length;q++)
+            {
+                System.out.println(temp[q]);
+            }
             // Copying the elements of temp[] in arr[]
             // to get the final rotated array
             for (int i = 0; i < n; i++) {
