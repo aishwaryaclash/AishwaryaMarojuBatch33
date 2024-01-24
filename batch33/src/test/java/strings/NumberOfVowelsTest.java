@@ -1,4 +1,4 @@
-package org.example;
+package strings;
 import strings.NumberOfVowels;
 
 import org.junit.Test;
