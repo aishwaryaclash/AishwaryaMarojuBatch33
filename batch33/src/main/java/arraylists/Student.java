@@ -1,16 +1,14 @@
 package arraylists;
-import java.util.ArrayList;
+//import java.util.ArrayList;
+
 class Student {
     String firstName;
     String lastName;
-    double gpa;
+    double GPA;
 
-    public Student(String firstName, String lastName, double gpa) {
+    public Student(String firstName, String lastName, double GPA) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.gpa = gpa;
+        this.GPA = GPA;
     }
 }
-
-
-
