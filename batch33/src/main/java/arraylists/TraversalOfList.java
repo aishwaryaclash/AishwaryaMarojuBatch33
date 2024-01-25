@@ -33,14 +33,5 @@ public class TraversalOfList {
         return true;
     }
 
-    public static void main(String args[]) {
-        // Test with a non-empty string
-        traverseArrayList("Aishwarya");
 
-        // Test with null string
-        traverseArrayList(null);
-
-        // Test with empty string
-        traverseArrayList("");
-    }
 }

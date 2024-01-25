@@ -10,23 +10,24 @@ import java.util.Collections;
 import static junit.framework.Assert.*;
 public class RemoveLastElementTest {
     @Test
-    //if last element is empty
+        //if last element is empty
     void testRemoveLastElement1()
     {
         System.out.println("Test Case 1 :");
-       ArrayList<String> stringList=new ArrayList<>();
-       stringList.add("");
-       System.out.println("ArrayList before removal: "+stringList);
-       //Removing the last object
+        ArrayList<String> stringList=new ArrayList<>();
+        stringList.add("");
+        System.out.println("ArrayList before removal: "+stringList);
+        //Removing the last object
         ArrayList<String> expectedList=new ArrayList<>();
         expectedList.add("");
+        expectedList.remove(expectedList.size() - 1);
         System.out.println("Expected ArrayList after removal: " + expectedList);
         Assert.assertEquals(expectedList,RemoveLastElement.processArrayList(stringList));
 
 
     }
     @Test
-    //if last element is some value including null
+        //if last element is some value including null
     void testRemoveLastElement2()
     {
         System.out.println("Test Case 2 :");
@@ -52,9 +53,8 @@ public class RemoveLastElementTest {
         System.out.println("Expected ArrayList after removal: " + expectedList);
 
         // Check if the actual ArrayList matches the expected ArrayList
-       Assert.assertEquals(expectedList,RemoveLastElement.processArrayList(stringList));
+        Assert.assertEquals(expectedList,RemoveLastElement.processArrayList(stringList));
     }
 
 
-    }
-
+}
