@@ -13,7 +13,8 @@ public class RemoveDuplicatesTest {
         String p="Aishwarya";
         String expectedString="Aishwary";
         assertEquals(expectedString,RemoveDuplicates.removeDuplicates(p));
-
+        System.out.println("Expected :"+ expectedString);
+        System.out.println("Actual :"+ RemoveDuplicates.removeDuplicates(p));
 
     }
     @Test
@@ -22,6 +23,8 @@ public class RemoveDuplicatesTest {
         String p=null;
         String expectedString=p;
         assertEquals(expectedString,RemoveDuplicates.removeDuplicates(p));
+        System.out.println("Expected :"+ expectedString);
+        System.out.println("Actual :"+ RemoveDuplicates.removeDuplicates(p));
     }
     @Test
     public void RemoveDuplicate3()
@@ -29,6 +32,8 @@ public class RemoveDuplicatesTest {
         String p2="";
         String expectedStrings=p2;
         assertEquals(expectedStrings,RemoveDuplicates.removeDuplicates(p2));
+        System.out.println("Expected :"+ expectedStrings);
+        System.out.println("Actual :"+ RemoveDuplicates.removeDuplicates(p2));
 
     }
 }

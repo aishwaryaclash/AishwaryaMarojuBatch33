@@ -26,8 +26,15 @@ public class HashSetExpTest {
         set1.add("Aishwarya");
         ArrayList<String> arrayList = new ArrayList<>(set1);
         assertEquals(arrayList, HashSetExp.getNextElementUsingIterator(set1));
+        System.out.println("Expected :"+arrayList);
+        System.out.println("Actual :"+ HashSetExp.getNextElementUsingIterator(set1));
         assertEquals(arrayList, HashSetExp.getElementUsingForLoop(set1));
+        System.out.println("Expected :"+arrayList);
+        System.out.println("Actual :"+ HashSetExp.getElementUsingForLoop(set1));
         assertEquals(arrayList, HashSetExp.getElementUsingEnhancedForLoop(set1));
+        System.out.println("Expected :"+arrayList);
+        System.out.println("Actual :"+ HashSetExp.getElementUsingEnhancedForLoop(set1));
+
 
     }
 }
