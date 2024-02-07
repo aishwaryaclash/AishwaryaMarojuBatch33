@@ -1,15 +1,38 @@
 package streams;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+
+
+
+import org.junit.Assert;
+import org.junit.Test;
 import streams.CapitalizeFirstLetter;
 
-import static org.testng.Assert.assertEquals;
-public class CapitalizeFirstLetterTest {
-    @Test
-    public void testCapitalizeFirstLetter(){
-        String[] s = new String[]{"apple","banana","kiwi","cherry"};
-        String[] s1 = new String[]{"Apple","Banana","Cherry","Kiwi"};
-        Assert.assertEquals(s1, CapitalizeFirstLetter.capitalizeFirstLetter(s));
+    public class CapitalizeFirstLetterTest{
+
+        CapitalizeFirstLetter letter = new CapitalizeFirstLetter();
+
+        @Test
+        public void testCapitalize() {
+            String[] str = {"python", "java"};
+            String[] compstr = {"Java", "Python"};
+            String[] res = letter.capitalizeFirstLetterAlphabetically(str);
+            Assert.assertArrayEquals(compstr, res);
+        }
+
+        @Test
+        public void testCapitalize1() {
+            String[] str = {"python", "java"};
+            String[] compstr = {"Java", "python"};
+            String[] res = letter.capitalizeFirstLetterAlphabetically(str);
+            Assert.assertNotSame(compstr, res);
+        }
+
+        @Test
+        public void testCapitalize2() {
+            String[] str = {null};
+            String[] compstr = {null};
+            String[] res = letter.capitalizeFirstLetterAlphabetically(str);
+            Assert.assertArrayEquals(compstr, res);
+        }
     }
-}
+

@@ -1,5 +1,4 @@
-package streams;
-
+package  streams;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,3 +15,6 @@ public class RemoveDuplicatesFromList {
         li1.forEach(s -> System.out.println(s));
     }*/
 }
+
+
+

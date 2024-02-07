@@ -1,24 +1,14 @@
 package streams;
 
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.stream.Stream;
-
+import java.util.stream.Collectors;
+import java.util.List;
 public class CapitalizeFirstLetter {
-
-    public static String[] capitalizeFirstLetter(String[] s){
-
-        if(s == null){
-            return s;
-        }
-        String[] capitalizedArray = Arrays.stream(s)
-                .map(a -> a.substring(0,1).toUpperCase()+a.substring(1))
+    public String[] capitalizeFirstLetterAlphabetically(String[] strings) {
+        return Arrays.stream(strings)
+                .map(s -> s != null ? Character.toUpperCase(s.charAt(0)) + s.substring(1) : null)
+                .sorted()
                 .toArray(String[]::new);
-        String[] capitalizedArray1 = Arrays.stream(capitalizedArray)
-                .sorted(Comparator.naturalOrder()).toArray(String[]::new);
-        return capitalizedArray1;
-
     }
-
-
 }
+

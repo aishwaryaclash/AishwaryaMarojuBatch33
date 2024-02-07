@@ -1,10 +1,11 @@
-package lambdastreams;
+package streams;
+
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-import lambdastreams.PrintVowels;
+import streams.StringVowel;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-public class PrintVowelsTest {
+public class StringVowelTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
 
@@ -14,7 +15,7 @@ public class PrintVowelsTest {
         // Redirect System.out for testing
         System.setOut(new java.io.PrintStream(outContent));
 
-        PrintVowels.countPrintVowels(stringArray);
+        StringVowel.countPrintVowels(stringArray);
 
         // Reset System.out
         System.setOut(originalOut);
