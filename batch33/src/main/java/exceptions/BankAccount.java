@@ -1,3 +1,4 @@
+
 package exceptions;
 
 public class BankAccount{
@@ -7,12 +8,12 @@ public class BankAccount{
         this.balance = balance;
     }
 
-    static class InsufficientFundsException extends Exception{
+   public static class InsufficientFundsException extends Exception{
         public InsufficientFundsException(String message){
             super(message);
         }
     }
-    static class InvalidWithdrawalException extends Exception{
+   public static class InvalidWithdrawalException extends Exception{
         public InvalidWithdrawalException(String message){
             super(message);
         }
@@ -41,8 +42,8 @@ public class BankAccount{
         }
     }
 
-    public static void main(String[] args){
-        BankAccount b = new BankAccount(1000.00);
+    public static void bbbank(BankAccount b){
+
         withdraw(10.00);
         withdraw(-889.0);
         withdraw(1900.0);

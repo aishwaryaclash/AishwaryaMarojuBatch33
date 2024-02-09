@@ -5,8 +5,8 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class FilesExample {
-    public static void main(String[] args) {
-        String fileName = "D:\\BLACK.txt";
+    public static void fileRead(String fileName){
+       // String fileName = "D:\\BLACK.txt";
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String line;
             while ((line = reader.readLine()) != null) {
